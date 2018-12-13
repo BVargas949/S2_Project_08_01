@@ -51,14 +51,16 @@
 
 
       </article>
-
+      <!-- Below I created the table element with the id of "Pricing". The colgroup has two col elements to define the columns in the table, they were given an ID of "firstcol" and a class of "datacols". -->
       <table id="pricing">
             <colgroup>
                   <col id="firstcol">
                   <col class="datacols" span="4">
+            </colgroup>
+            <!-- Below the table head was created using the thead element.Nested within the thead there are two table rows (tr) seperated by a line break(br). The first row has five table headings(th) and the secound row has four table headings(th), all with content.  -->
             <thead>
                   <tr>
-                        <th>Select a plan</th>
+                        <th rowspan="2">Select a plan</th>
                         <th>Starter</th>
                         <th>Prime</th>
                         <th>Prime Plus</th>
@@ -72,6 +74,7 @@
                         <th>$69.95 a month</th>
                   </tr>
             </thead>
+            <!-- Here the table footer was created using the tfoot element.Nested within the tfoot there is one table row(tr element) . Within the table row there is one heading(th element) and four table cells (td element). All cells and headings have content.  -->
             <tfoot>
                   <tr>
                         <th>Summary</th>
@@ -92,11 +95,46 @@
                               and fast data delivery.
                         </td>
                   </tr>
+                  <!-- The table body was created using the tbody element. There are five table rows nested within the table body. All table rows have on table heading and four table cells, all with content. -->
                   <tbody>
+                        <tr>
+                              <th>Download Speed</th>
+                              <td>3Mbps</td>
+                              <td>15Mbps</td>
+                              <td>25Mbps</td>
+                              <td>50Mbps</td>
 
+                        </tr>
+                        <tr>
+                              <th>Upload Speed</th>
+                              <td>512Kbps</td>
+                              <td>6Mbps</td>
+                              <td>10Mbps</td>
+                              <td>20Mbps</td>
+                        </tr>
+                        <tr>
+                              <th>Cloud Storage</th>
+                              <td>2GB</td>
+                              <td>5GB</td>
+                              <td>15GB</td>
+                              <td>40GB</td>
+                        </tr>
+                        <tr>
+                              <th>E-Mail Accounts</th>
+                              <td>2 Accounts</td>
+                              <td>3 Accounts</td>
+                              <td>5 Accounts</td>
+                              <td>10 Accounts</td>
+                        </tr>
+                        <tr>
+                              <th>24/7 Support</th>
+                              <td>Yes</td>
+                              <td>Yes</td>
+                              <td>Yes</td>
+                              <td>Yes</td>
+                        </tr>
                   </tbody>
             </tfoot>
-            </colgroup>
       </table>
 
       <footer>

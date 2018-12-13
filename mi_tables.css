@@ -6,30 +6,63 @@
    Case Problem 1
 
    Tables Style Sheet
-   Author: 
-   Date:   
+   Author: Bryan Vargas
+   Date:   12.10.18
 
    Filename:         mi_tables.css
 
 */
 
+/* Within the table styles the table selector was used and given a linear gradient background that began with an rgb value and ended in black. The table was given a border 5 pixel units wide, with grey color. The table heading and table cells (th, td) were selected and given a border that is 3 pixel units wide, solid, with a grey color value. They were also given Line-Height of 1.4 em units, and padding all around 8 pixel units wide. The table heading was then given seperate specifications, a black background color, text color value of cyan, font-weight of normal. The table cells were given a color value of white, font size of 0.9 em units, and the text was align to the top.  */
+
 /* Table Styles */
+table {
+    background: linear-gradient(rgb(190, 215, 255), black);
+    border: 5px solid gray;
+}
 
+th,
+td {
+    border: 3px solid gray;
+    line-height: 1.4em;
+    padding: 8px;
+}
 
+th {
+    background-color: black;
+    color: rgb(130, 210, 255);
+    font-weight: normal;
+}
+
+td {
+    color: white;
+    font-size: 0.9em;
+    text-align: top;
+}
+
+/* Within the column styles the col selector with an ID of "firstcol" was given a width of 24%. The col selector with the class of datacols was given a width of 19%; */
 
 /* Column Styles */
+col#firstcol {
+    width: 24%;
+}
 
+col.datacols {
+    width: 19%;
+}
 
+/* The table headings nested within the table head group were given a height of 60 pixel units. Within the same table head group the table rows with psuedo element of first of type and table headings with the psuedo element of first of type  were given a font-size of 2em. Then a second similar selector was created, the difference is that the table heading has a pseudo element that is not the "first-of-type". The specifications for that selector are having a trabsparent background, and the text became black.*/
 
 /* Table Header Styles */
+thead th {
+    height: 60px;
+}
 
+thead tr:first-of-type th:first-of-type {
+    font-size: 2em;
+}
 
-
-
-
-
-
-
-
-
-
+thead tr:first-of-type th:not(:first-of-type) {
+    background-color: transparent;
+    color: black;
+}
